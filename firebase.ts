@@ -6,7 +6,7 @@ import { getFirestore } from 'firebase/firestore';
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyC06RGHeE0kBAKkJWDDsJ9X3AvK817h5Rw",
-  authDomain: "quantumone-364019.firebaseapp.com",
+  authDomain: "https://chatgpt-nine-self.vercel.app/api/auth/callback/google",
   projectId: "quantumone-364019",
   storageBucket: "quantumone-364019.appspot.com",
   messagingSenderId: "20750751707",
