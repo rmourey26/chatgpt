@@ -5,13 +5,13 @@ import { getFirestore } from 'firebase/firestore';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: 'AIzaSyDcayId5zGsXboUszowwtoOUEah2_yLU3c',
-  authDomain: 'chatgpt-message.firebaseapp.com',
-  projectId: 'chatgpt-message',
-  storageBucket: 'chatgpt-message.appspot.com',
-  messagingSenderId: '855154140569',
-  appId: '1:855154140569:web:cfd3736cd14bc4b4ef9f08',
-  measurementId: 'G-F8WDEEXHW6'
+  apiKey: "AIzaSyC06RGHeE0kBAKkJWDDsJ9X3AvK817h5Rw",
+  authDomain: "quantumone-364019.firebaseapp.com",
+  projectId: "quantumone-364019",
+  storageBucket: "quantumone-364019.appspot.com",
+  messagingSenderId: "20750751707",
+  appId: "1:20750751707:web:d93029ded07baeb0dd79fe",
+  measurementId: "G-EH3MFLRYSW"
 };
 
 // Initialize Firebase
