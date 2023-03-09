@@ -15,11 +15,11 @@ export default async function handler(
   const { prompt, chatId, model, session, parentMessageId } = req.body;
 
   if (!prompt) {
-    res.status(400).json({ answer: 'Please Provider A Prompt' });
+    res.status(400).json({ answer: 'Please Provide A Prompt' });
   }
 
   if (!chatId) {
-    res.status(400).json({ answer: 'Please Provider A Valid Chat ID' });
+    res.status(400).json({ answer: 'Please Provide A Valid Chat ID' });
   }
 
   const result = await chatgptQuery(prompt, parentMessageId);
