@@ -5,13 +5,13 @@ import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import rehypeKatex from 'rehype-katex';
 
 type ConvertToMarkdownProps = {
-  content: string;
+  children: string;
 };
 
-function ConvertToMarkdown({ content }: ConvertToMarkdownProps) {
+function ConvertToMarkdown({ }: ConvertToMarkdownProps) {
   return (
     <ReactMarkdown
-      Children
+      children
       components={{
         code({ node, inline, className, style, child, ...props }) {
           const match = /language-(\w+)/.exec(className || '');
