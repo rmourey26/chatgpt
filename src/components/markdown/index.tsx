@@ -11,7 +11,7 @@ type ConvertToMarkdownProps = {
 function ConvertToMarkdown({ content }: ConvertToMarkdownProps) {
   return (
     <ReactMarkdown
-      children={content}
+      children={[content]}
       components={{
         code({ node, inline, className, style, children, ...props }) {
           const match = /language-(\w+)/.exec(className || '');
