@@ -11,13 +11,13 @@ type ConvertToMarkdownProps = {
 function ConvertToMarkdown({ content }: ConvertToMarkdownProps) {
   return (
     <ReactMarkdown
-      children={[content]}
+      Children
       components={{
-        code({ node, inline, className, style, children, ...props }) {
+        code({ node, inline, className, style, child, ...props }) {
           const match = /language-(\w+)/.exec(className || '');
           return !inline ? (
             <SyntaxHighlighter
-              children={String(children).replace(/\n$/, '')}
+              child={String(child).replace(/\n$/, '')}
               style={oneDark}
               language={match ? match[1] : ''}
               PreTag="div"
@@ -25,7 +25,7 @@ function ConvertToMarkdown({ content }: ConvertToMarkdownProps) {
             />
           ) : (
             <code className="font-semibold italic" {...props}>
-              {children}
+              {child}
             </code>
           );
         }
